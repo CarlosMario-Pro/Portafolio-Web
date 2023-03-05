@@ -1,0 +1,144 @@
+/*---------------Container General---------------*/
+.footer {
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), #000000), url(../../assets/Footer.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------Container Logo nombre---------------*/
+.container-footerName {
+    /* border: 1px solid red; */
+    border-left: 1px solid #212529;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-footerNameA {
+    font-size: 30px;
+    color: #fcbf31;
+}
+.container-footerNameB {
+    color: #fcbf31;
+    font-size: 40px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+/*---------------Container Menú navegación---------------*/
+.container-footerLinks {
+    border-left: 1px solid #212529;
+    width: 250px;
+    height: 100px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.footerLinksAboutMe:hover, .footerLinksMyServices:hover,
+.footerLinksSkills:hover, .footerLinksFormation:hover,
+.footerLinksExperience:hover, .footerLinksPortfolio:hover,
+.footerLinksTestimonials:hover, .footerLinksContact:hover {
+    color: #fcbf31;; 
+}
+
+.container-footerLinksUno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container-footerLinksDos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container-footerLinksUno a, 
+.container-footerLinksDos a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+/*---------------Container Redes sociales---------------*/
+.social-mediaFooter {
+    border-left: 1px solid #212529;
+    border-right: 1px solid #212529;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedinFooter, .codepenFooter,
+.githubFooter, .pinterestFooter {
+    color: #e9ecef;
+    font-size: 40px;
+    margin: 0 10px;
+    transition: 300ms all ease;
+}
+.linkedinFooter:hover, .codepenFooter:hover,
+.githubFooter:hover, .pinterestFooter:hover {
+    color: #FCBF31;
+    transform: scale(1.1);
+}
+
+.copyRight {
+    color: #e9ecef;
+    text-align: center;
+}
+
+
+
+/*---------------(1050px)---------------*/
+@media screen and (max-width: 1050px) {
+    .container-footerName {
+        width: 100;
+    }
+    .container-footerLinks {
+        width: 250;
+    }
+    .social-mediaFooter {
+        width: 250;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+    }
+    .container-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+    }
+    .container-footerName, .container-footerLinks,
+    .social-mediaFooter {
+        border: none;
+    }   
+   
+}

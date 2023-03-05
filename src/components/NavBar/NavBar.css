@@ -1,0 +1,111 @@
+.Cabecera {
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9));
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/*---------------Container Logo nombre---------------*/
+.container-logo {
+    /* border: 1px solid red; */
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-name {
+    font-size: 20px;
+    color: #fcbf31;
+    margin: -20px 0 0 0;
+}
+.logo-nameB {
+    color: #fcbf31;
+    font-size: 30px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+/*---------------Container Ícono hamburguesa---------------*/
+.Cabecera-button {
+    border: none;
+    display: none;
+    cursor: pointer;
+    background: transparent;
+}
+.Cabecera-svg {
+    color: white;
+    font-size: 20px;
+    transition: 300ms all ease;
+}
+.Cabecera-svg:hover {
+    transform: scale(1.1);
+}
+
+/*---------------Container Logo nombre---------------*/
+.Cabecera-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Cabecera-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.Cabecera-li {
+    margin: 0 .5em;
+    list-style: none;
+}
+.Cabecera-li--active {
+    background: #e63946;
+    padding: 5px;
+}
+.Cabecera-a {
+    padding: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+nav ul li a:hover {
+    color: #076764;
+}
+
+/*---------Responsive---------*/
+@media screen and (max-width: 1030px){
+    .Cabecera-button {
+        display: flex;
+    }
+    .Cabecera-nav {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+    .Cabecera-nav.isActive {
+        height: 55vh;
+        opacity: 1;
+    }
+    .Cabecera-ul {
+        flex-direction: column;
+    }
+    .Cabecera-li {
+        margin: .5em 0;
+    }
+}

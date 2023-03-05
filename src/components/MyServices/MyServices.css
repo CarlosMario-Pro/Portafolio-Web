@@ -1,0 +1,118 @@
+.services {
+    /* border: 5px solid red; */
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #0d1b2a;
+}
+
+.container-MyServices {
+    /* border: 1px solid green; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 900px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto 0 auto;
+    border-radius: 5px;
+    animation: opacity 6000ms;
+    /* animation: opacity 2000ms ease-in-out infinite alternate; */
+}
+
+.myServices {
+    /* border: 1px solid black; */
+    color: #adb5bd;
+    width: 300px;
+    height: 170px;
+    transition: 300ms all ease;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+
+.myServices:hover {
+    background: #FEBF34;
+    color: #0d1b2a;
+    transform: scale(1.03);
+}
+
+.myServices H1 {
+    font-size: 16px;
+}
+
+.gridMyServices {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridMyServicesOne {
+    /* border: 1px solid chocolate; */
+    grid-column: 1 / 2;
+    width: 80px;
+    font-size: 50px;
+    color: #001524;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.gridMyServicesTwo {
+    /* border: 1px solid teal; */
+    grid-column: 2 / 3;
+    width: 210px;
+    padding: 0 10px 0 0;
+}
+
+/*---------------Keyframes/*---------------*/
+@keyframes opacity{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+/*---------------(950px)---------------*/
+@media screen and (max-width: 950px) {
+    .services {
+        /* border: 1px solid red; */
+        height: 900px;
+    }
+    .container-MyServices{
+        /* border: 1px solid red; */
+
+        height: 505px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*---------------(650px)---------------*/
+@media screen and (max-width: 650px) {
+    .services {
+        /* border: 1px solid red; */
+        height: 1200px;
+        padding: 100px 0;
+    }
+    .container-MyServices{
+        /* border: 1px solid red; */
+        height: 1170px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .myServices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
